@@ -31,6 +31,7 @@ const SelectionScreen = ({ stepData, handleSubmit, isDisabledCTA }: GlobalStepPr
                             </div>
                         </div>
                     ))}
+
             {/* <div className="flex mb-5">
                 <div className="mr-5 border-slate-200 border-2 p-4 rounded-full">
                     <img src={userMerchant}></img>
@@ -67,6 +68,7 @@ const SelectionScreen = ({ stepData, handleSubmit, isDisabledCTA }: GlobalStepPr
                     <input type="radio" />
                 </div>
             </div> */}
+
             <ButtonGlobal
                 className="bg-primary bg-black text-white font-bold mt-6 mt-8 py-2 px-8 rounded"
                 onClick={() => {

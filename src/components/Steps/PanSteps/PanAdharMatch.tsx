@@ -4,7 +4,7 @@ import thumpdown from '../../../assets/icons/thumpdown.svg';
 import { useStore } from '../../../store/zustand';
 
 const PanAdharMatch = () => {
-    const { panStatus, panStatusResult } = useStore();
+    const { panStatus = 1, panStatusResult } = useStore();
 
     return (
         <>
@@ -36,7 +36,7 @@ const PanAdharMatch = () => {
                         </span>
                     </span>
                     <span className="ml-3 sm:ml-5">
-                        <span className="text-lg font-[500] text-red">Matching Failed</span>{' '}
+                        <span className="text-lg font-[500] text-red">Matching Failed</span>
                         <div className="mt-1 font-[400] text-[18px] sm:text-md">
                             Your name, PAN and Aadhaar matches by <span className="font-bold text-lg">30%</span>
                         </div>

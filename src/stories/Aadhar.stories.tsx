@@ -24,11 +24,11 @@ const Template: ComponentStory<typeof AadharConsent> = () => {
         form_data: {},
         success_message: 'Aadhaar consent taken.'
     };
-    const handleStepDataSubmit = (data: any) => {
+    const handleSubmit = (data: any) => {
         console.log('HandleWlcStepData', data);
     };
 
-    return <AadharConsent stepData={stepData} handleSubmit={handleStepDataSubmit} isDisabledCTA={false} />;
+    return <AadharConsent stepData={stepData} handleSubmit={handleSubmit} isDisabledCTA={false} />;
 };
 
 export const AadharPage = Template.bind({});

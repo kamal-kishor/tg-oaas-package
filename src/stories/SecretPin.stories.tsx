@@ -1,15 +1,15 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Business from '../components/Steps/Business/Business';
+import SecretPin from '../../src/components/Steps/PIN/SecretPin';
 import { StepDataType } from '../utils/data/stepsData';
 
-const AadharStory = {
-    title: 'ReactComponentLibrary/Business'
-} as ComponentMeta<typeof Business>;
+const Pin = {
+    title: 'ReactComponentLibrary/SecretPin'
+} as ComponentMeta<typeof SecretPinStory>;
 
-export default AadharStory;
+export default Pin;
 
-const Template: ComponentStory<typeof Business> = () => {
+const Template: ComponentStory<typeof SecretPin> = () => {
     const stepData: StepDataType = {
         id: 9,
         name: 'BusinessDetails',
@@ -23,12 +23,14 @@ const Template: ComponentStory<typeof Business> = () => {
         description: '',
         form_data: {}
     };
-    const stateTypes = [{ label: 'Andhra Pradesh' }, { label: 'Assam' }, { label: 'Arunachal Pradesh' }, { label: 'Bihar' }, { label: 'Chhattisgarh' }];
     const handleStepDataSubmit = (data: any) => {
         console.log('HandleWlcStepData', data);
     };
+    const handleStepCallBack = (data: any) => {
+        console.log('handleStepCallBack', data);
+    };
 
-    return <Business stepData={stepData} handleSubmit={handleStepDataSubmit} isDisabledCTA={false} stateTypes={stateTypes} />;
+    return <SecretPin stepData={stepData} handleSubmit={handleStepDataSubmit} isDisabledCTA={false} handleStepCallBack={handleStepCallBack} />;
 };
 
-export const BussinessComoponent = Template.bind({});
+export const PinStory = Template.bind({});

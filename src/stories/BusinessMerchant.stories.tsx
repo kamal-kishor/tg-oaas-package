@@ -27,7 +27,9 @@ const Template: ComponentStory<typeof BusinessMerchant> = () => {
         console.log('HandleWlcStepData', data);
     };
 
-    return <BusinessMerchant stepData={stepData} handleSubmit={handleStepDataSubmit} isDisabledCTA={false} />;
+    const stateTypes = [{ label: 'Andhra Pradesh' }, { label: 'Assam' }, { label: 'Arunachal Pradesh' }, { label: 'Bihar' }, { label: 'Chhattisgarh' }];
+
+    return <BusinessMerchant stepData={stepData} handleSubmit={handleStepDataSubmit} stateTypes={stateTypes} isDisabledCTA={false} />;
 };
 
 export const BussinessMerchants = Template.bind({});

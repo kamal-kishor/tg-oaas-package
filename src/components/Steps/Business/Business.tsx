@@ -180,7 +180,7 @@ const Business = ({ stepData, handleSubmit, isDisabledCTA = false, shopTypes = [
                                     name="current_address_state"
                                     value={values.current_address_state}
                                     onChange={handleChange('current_address_state')}
-                                    className="px-0.5 py-[7px] border-2 border-lightdefault-800 w-full rounded-md bg-white border-lightdefault"
+                                    className="px-0.5 py-[7px] border-2 border-lightdefault-800 w-full rounded-md bg-white border-lightdefault "
                                 >
                                     {stateTypes.map((state, idx) => {
                                         return (
