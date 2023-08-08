@@ -1,6 +1,6 @@
 import React from 'react';
 
-type InputProps = {
+export type InputProps = {
     type: string;
     id: string;
     className: string;

@@ -5,7 +5,7 @@ import { StepDataType } from '../utils/data/stepsData';
 
 const Pin = {
     title: 'ReactComponentLibrary/SecretPin'
-} as ComponentMeta<typeof SecretPinStory>;
+} as ComponentMeta<typeof SecretPin>;
 
 export default Pin;
 

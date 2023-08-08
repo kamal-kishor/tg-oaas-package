@@ -8,6 +8,7 @@ const HomeStory = {
 } as ComponentMeta<typeof OnboardingWidget>;
 
 export default HomeStory;
+
 const handleStepDataSubmit = (data: any) => {
     console.log('HandleWlcStepData', data);
 };

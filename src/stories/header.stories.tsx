@@ -9,8 +9,8 @@ const HeaderMeta = {
 
 export default HeaderMeta;
 
-const Template: ComponentStory<typeof Header> = (args) => {
-    return <Header {...args} />;
+const Template: ComponentStory<typeof Header> = () => {
+    return <Header />;
 };
 
 export const Default = Template.bind({});

@@ -1,4 +1,4 @@
-type LabelProps = {
+export type LabelProps = {
     className: string;
     children?: JSX.Element | string;
 };
